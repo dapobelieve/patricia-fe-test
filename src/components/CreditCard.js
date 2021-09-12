@@ -42,7 +42,7 @@ function CreditCard ({card, style, className}) {
               </div>
             </div>
           </div>
-          <div className="images position-absolute dollar"><img src={card.type+'Icon'} alt=""/></div>
+          <div className="images position-absolute dollar"><img src={`${card.type}Icon`} alt=""/></div>
           <div className="images position-absolute pattern overflow-hidden"><img src={pattern} alt=""/></div>
         </div>
       </div>

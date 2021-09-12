@@ -32,7 +32,7 @@ const Main = () => {
           <h1 className="fs-1 ps-3 fw-bolder text-gray-100 m-0">Cards</h1>
         </div>
         <div className="px-md-4">
-          <div className="d-flex  align-items-start flex-column flex-lg-row  pt-5 mb-5">
+          <div className="d-flex  align-items-start flex-column flex-lg-row pt-lg-5 pt-3 mb-lg-5 mb-3">
             <div className="d-flex mb-3 mb-lg-0">
               <div className="rounded-border bg-blue d-flex ">
                 <img src={imageIcon} className="p-3 " alt=""/>
@@ -42,7 +42,7 @@ const Main = () => {
                 <p className="m-0 p-0 d-block text-black-50">Lorem Ipsum dolor sit amet</p>
               </div>
             </div>
-            <button className="btn btn-warning ms-lg-auto rounded-border py-2">Create New Card</button>
+            <button className="d-none d-lg-block btn btn-warning ms-lg-auto rounded-border py-2">Create New Card</button>
           </div>
           <div className="px-2 px-sm-0 mb-5">
             <div className="row mb-4 d-flex justify-content-sm-between">
@@ -55,6 +55,9 @@ const Main = () => {
             </div>
             <button className="btn btn-outline-success rounded-border me-4">Freeze Card</button>
             <button className="btn btn-outline-danger rounded-border">Delete Card</button>
+            <div className="d-grid">
+              <button className="mt-4 d-lg-none btn btn-warning ms-lg-auto rounded-border py-2">Create New Card</button>
+            </div>
           </div>
           <div>
             <div className="card border-0">
