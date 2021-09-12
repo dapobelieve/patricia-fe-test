@@ -78,7 +78,7 @@ function Sidebar(props) {
       </div>
       {
         mobileMenu &&
-        <div className="position-absolute bg-white top-0 h-100 w-100 mobile-nav">
+        <div className="position-fixed bg-white top-0 h-100 w-100 mobile-nav">
           <div className="menus me-4">
             <div className="p-3">
               <img onClick={() => toggleMobileMenu(mobileMenu => !mobileMenu)} src={cancelIcon} style={{height: '20px'}} className="cursor-pointer" alt=""/>
