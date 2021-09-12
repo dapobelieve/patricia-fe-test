@@ -1,0 +1,18 @@
+.activity {
+  &_item {
+    .brand {
+      height: 2.875rem;
+      width: 2.875rem;
+      padding: 14px;
+      border-radius: 8px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    h6 {
+      color: var(--gray-300);
+      font-size: 0.875rem;
+    }
+  }
+}

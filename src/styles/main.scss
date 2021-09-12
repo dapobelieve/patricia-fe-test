@@ -1,0 +1,107 @@
+.main {
+margin-top: 2.5rem;
+.credit-card {
+  .overlay {
+    border-radius: 20px;
+    z-index: 3;
+    div:first-child {
+      margin-bottom: 50px;
+    }
+  }
+  //max-width: 312px;
+  > div {
+    height: 100%;
+    min-height: 204px;
+    border-radius: 20px;
+    //background-color: var(--raisin-black);
+  }
+  .pattern {
+    top: -16px;
+    right: -31px
+  }
+  .dollar {
+    bottom: -41px;
+    left: -11px
+  }
+  &_number {
+    font-size: 1.125rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+
+  &_balance {
+    small {
+      font-size: .5rem;
+    }
+  }
+  &_holder {
+    h6 {
+      font-size: .8rem;
+    }
+    .valid {
+      small {
+        font-size: 6px !important;
+      }
+    }
+    .ccv {
+      small {
+        font-size: .7rem;
+      }
+    }
+  }
+}
+.smaller-cards {
+    .position-relative {
+      filter: blur(3px);
+    }
+    &:before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: #fff;
+      z-index: 0;
+      transform: scale(.85);
+      left: 17%;
+      border-radius: 36px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    }
+    &:after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: #fff;
+      z-index: -1;
+      top: 0;
+      transform: scale(.65);
+      left: 35%;
+      border-radius: 36px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+.card-details {
+  border-radius: 24px;
+  background-color: var(--gray-9);
+  span:first-child {
+    width: 100%;
+  }
+}
+.user-image  {
+  height: 2rem;
+  width: 2rem;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1400px) {
+  .credit-card {
+    max-width: 420px;
+  }
+}
+}

@@ -1,0 +1,22 @@
+.sidebar {
+  > div:first-child {
+    padding-top: 2rem;
+  }
+  .menus {
+    margin-top: 4rem;
+    div:hover {
+      background-color: var(--bg-active);
+      border-bottom-right-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      transition: background-color 100ms ease-out;
+      p {
+        color: var(--primary);
+        transition: color 200ms ease-in;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  z-index: 5;
+}

@@ -1,0 +1,44 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 14px;
+  --bg-active: #FFEEA7;
+  --gray-100: #979AA5;
+  --gray-900: #444854;
+  --primary: #006156;
+  --border-radius: .5rem;
+  --blue-100: #DEF5F2;
+  --raisin-black: #1D1E2C;
+  --gray-9: #F9FAFC;
+  --gray-300: #575A65;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rounded-border {
+  border-radius: var(--border-radius);
+}
+
+.bg-blue {
+  background-color: var(--blue-100);
+}
+.text-gray-100 {
+  color: var(--gray-100);
+}
+
+.bg-gray-9 {
+  background-color: var(--gray-9);
+}
+.active {
+  background-color: var(--bg-active);
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  transition: background-color 100ms ease-out;
+  p {
+    color: var(--primary)
+  }
+}
