@@ -46,7 +46,7 @@ function Sidebar(props) {
     if(mobileMenu) {
       document.body.style.overflow = 'hidden'
     }else {
-      document.body.style.overflow = 'auto'
+      document.body.style.overflow = 'auto  '
     }
   }, [mobileMenu])
   return (
