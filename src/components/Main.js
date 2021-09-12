@@ -7,17 +7,23 @@ import bellIcon from "../images/bell.svg";
 import menuIcon from "../images/menu.svg";
 import arrowLeft from '../images/arrow-circle-left.svg';
 import imageIcon from '../images/Image.svg';
+import dollarIcon from "../images/$.svg";
+import nairaIcon from "../images/naira.svg";
 
 
 const Main = () => {
   const cards = [
     {
       type: "dollar",
-      color: '#1D1E2C'
+      logo: dollarIcon,
+      color: '#1D1E2C',
+      balance: 200000
     },
     {
       type: "naira",
-      color: "#92d0c9e8"
+      logo: nairaIcon,
+      color: "#92d0c9e8",
+      balance: 43000
     }
   ];
 
